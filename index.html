@@ -1,0 +1,47 @@
+<!--
+File: index.html
+GUI Assignment: Scrabble
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2021 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SCRABBLE</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
+        <div class="first">  
+			<h2>SCRABBLE!!!</h2>
+			<div id="score">
+				<div>
+					<div class="score">Score:</div>
+					<div id="score">0</div>
+					<div class="word">Word:</div>
+					<div id="word"></div>
+				</div>
+			</div>
+			<div id="board">
+				<img class="board" src="graphics_data/Scrabble_Board_OneLine.png"></img>
+			</div>
+			<div id="rack">
+				<img class="rack" src="graphics_data/scrabble-tile-holder-406774_640.png"></img>
+			</div>
+				<button id="next" onclick="next()">Next</button>
+				<button id="clear" onclick="clear()">Clear</button>    
+			</div>
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type='text/javascript' src="js/script.js"></script>
+		<script>
+    $( document ).ready(function() {
+        getTile();
+    });
+  </script>
+    </body>
+</html>
